@@ -1,6 +1,7 @@
 <?php
 if ($_REQUEST['id'] != "") {
     $ProductID = $_REQUEST['id'];
+    $Picture = $_REQUEST['Picture'];
     $ProductName = $_REQUEST['ProductName'];
     $Category = $_REQUEST['Category'];
     $ProductDescription = $_REQUEST['ProductDescription'];
@@ -25,7 +26,7 @@ require_once('fragments/head.php');?>
                 </div>
                 <div class="row mb-3 justify-content-center">
                     <div class="col-2"><label class="form-label" for="">รูปภาพสินค้า</label></div>
-                    <div class="col-auto"><input class="form-control" type="text" name="Picture" id=""></div>
+                    <div class="col-auto"><input class="form-control" type="text" name="Picture" id="" value="<?php echo $Picture; ?>" disabled></div>
                 </div>
                 <div class="row mb-3 justify-content-center">
                     <div class="col-2"><label class="form-label" for="">ประเภทสินค้า</label></div>

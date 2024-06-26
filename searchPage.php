@@ -45,7 +45,7 @@ if (isset($_GET['search'])) {
                     <td><?= htmlspecialchars($row['QuantityStock']) ?></td>
                     <td>
                         <a class="btn btn-warning"
-                            href="editPage/?id=<?= $row['ProductID'] ?>&ProductName=<?= $row['ProductName'] ?>&Category=<?= $row['Category'] ?>&ProductDescription=<?= $row['ProductDescription'] ?>&Price=<?= $row['Price'] ?>&QuantityStock=<?= $row['QuantityStock'] ?>">แก้ไข</a>
+                            href="editPage/?id=<?= $row['ProductID'] ?>&Picture=<?= $row['Picture'] ?>&ProductName=<?= $row['ProductName'] ?>&Category=<?= $row['Category'] ?>&ProductDescription=<?= $row['ProductDescription'] ?>&Price=<?= $row['Price'] ?>&QuantityStock=<?= $row['QuantityStock'] ?>">แก้ไข</a>
                         <a class="btn btn-danger" href="delete/?id=<?= $row['ProductID'] ?>"
                             onclick="return confirm('ยืนยันการลบหรือไม่?')">ลบ</a>
                     </td>
