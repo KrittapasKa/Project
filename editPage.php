@@ -18,7 +18,7 @@ require_once('fragments/head.php');?>
         <?php include_once ('fragments/navbar.php'); ?>
         <div class="container text-center">
             <h2>ฟอร์มการเพิ่มสินค้า</h2>
-            <form action="http://localhost/test/saveEdit.php" method="POST">
+            <form action="http://localhost/test/edit_process.php" method="POST">
                 <div class="row my-3 justify-content-center">
                     <div class="col-2"><label class="form-label" for="">ชื่อสินค้า</label></div>
                     <div class="col-auto"><input class="form-control" type="text" name="ProductName" id=""

@@ -35,7 +35,7 @@ $title = "หน้าหลัก";
                         <td><?= htmlspecialchars($row['QuantityStock']) ?></td>
                         <td><a class="btn btn-warning"
                                 href="editPage/?id=<?= $row['ProductID'] ?>&Picture=<?= $row['Picture'] ?>&ProductName=<?= $row['ProductName'] ?>&Category=<?= $row['Category'] ?>&ProductDescription=<?= $row['ProductDescription'] ?>&Price=<?= $row['Price'] ?>&QuantityStock=<?= $row['QuantityStock'] ?>">แก้ไข</a>
-                            <a class="btn btn-danger" href="delete/?id=<?= $row['ProductID'] ?>"
+                            <a class="btn btn-danger" href="delete_process/?id=<?= $row['ProductID'] ?>"
                                 onclick="confirm('ยืนยันการลบหรือไม่?')">ลบ</a>
                         </td>
                     </tr>
